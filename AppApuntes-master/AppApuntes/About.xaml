@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppApuntes.About"
+             Title="Acerca de">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <HorizontalStackLayout Spacing="15">
+                <Image Source="image.png"
+                       HeightRequest="64"
+                       SemanticProperties.Description="Logo o avatar del desarrollador" />
+                <VerticalStackLayout>
+                    <Label Text="App de Notas" FontSize="22" FontAttributes="Bold" />
+                    <Label Text="por Sergio Masin" FontSize="18" />
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+
+            <Label Text="Aplicacion Agenda" 
+                   FontSize="16"
+                   LineBreakMode="WordWrap" />
+
+            <Label Text="Hola, que tal?" 
+                   FontSize="16"
+                   LineBreakMode="WordWrap" />
+
+            <Button Text="Más información..."
+                    Clicked="LearnMore_Clicked"
+                    HorizontalOptions="Start" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

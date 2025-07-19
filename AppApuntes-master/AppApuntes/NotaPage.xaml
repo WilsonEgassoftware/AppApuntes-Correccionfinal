@@ -1,0 +1,22 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppApuntes.NotaPage"
+             Title="Nota">
+
+    <VerticalStackLayout Spacing="10" Padding="15">
+        <Editor x:Name="TextEditor"
+                Placeholder="Escribe tu nota aquí"
+                AutoSize="TextChanges"
+                HeightRequest="200" />
+
+        <Grid ColumnDefinitions="*,*" ColumnSpacing="10">
+            <Button Text="Guardar"
+                    Clicked="Guardar_Clicked" />
+            <Button Grid.Column="1"
+                    Text="Eliminar"
+                    BackgroundColor="Tomato"
+                    TextColor="White"
+                    Clicked="Eliminar_Clicked" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
