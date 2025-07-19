@@ -6,6 +6,7 @@ public partial class About : ContentPage
     {
         InitializeComponent();
     }
+    // realizamos una incialializaciok de la clases 
 
     private async void LearnMore_Clicked(object sender, EventArgs e)
     {
