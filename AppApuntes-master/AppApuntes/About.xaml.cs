@@ -2,11 +2,12 @@ namespace AppApuntes;
 
 public partial class About : ContentPage
 {
-    public About()
+    public About() //iniciaríamos los componentes defenidos en la clase about
     {
         InitializeComponent();
     }
-    // realizamos una incialializaciok de la clases 
+    // abre la navegación web con la URL de maui 
+    //LearnMore se declarará para cuando hacer clic ejecuta el botón 
 
     private async void LearnMore_Clicked(object sender, EventArgs e)
     {
